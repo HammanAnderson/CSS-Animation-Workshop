@@ -1,0 +1,37 @@
+{
+  "name": "css-animations-workshop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A workshop to explore CSS animations.",
+  "scripts": {
+    "format": "prettier --write --ignore-unknown .",
+    "lint": "eslint .",
+    "cleanup": "npm run format && npm run lint",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BurlingtonCodeAcademy/css-animations-workshop"
+  },
+  "keywords": [
+    "workshop",
+    "javascript"
+  ],
+  "author": "Julie Assur",
+  "license": "LicenseRef-LICENSE",
+  "bugs": {
+    "url": "https://github.com/BurlingtonCodeAcademy/css-animations-workshop/issues"
+  },
+  "homepage": "https://github.com/BurlingtonCodeAcademy/css-animations-workshop#readme",
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "2.5.0",
+    "pretty-quick": "^3.1.2"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
